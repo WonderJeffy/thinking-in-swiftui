@@ -1,13 +1,13 @@
 //
-//  Chapter2_ExerciseUITestsLaunchTests.swift
-//  Chapter2-ExerciseUITests
+//  ThinkingInSwiftUIUITestsLaunchTests.swift
+//  ThinkingInSwiftUIUITests
 //
-//  Created by jeffy on 2022/5/2.
+//  Created by jeffy on 2022/5/3.
 //
 
 import XCTest
 
-class Chapter2_ExerciseUITestsLaunchTests: XCTestCase {
+class ThinkingInSwiftUIUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

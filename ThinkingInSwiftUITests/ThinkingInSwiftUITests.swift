@@ -1,14 +1,14 @@
 //
-//  Chapter2_ExerciseTests.swift
-//  Chapter2-ExerciseTests
+//  ThinkingInSwiftUITests.swift
+//  ThinkingInSwiftUITests
 //
-//  Created by jeffy on 2022/5/2.
+//  Created by jeffy on 2022/5/3.
 //
 
 import XCTest
-@testable import Chapter2_Exercise
+@testable import ThinkingInSwiftUI
 
-class Chapter2_ExerciseTests: XCTestCase {
+class ThinkingInSwiftUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

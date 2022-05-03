@@ -1,14 +1,14 @@
 //
-//  Chapter2_ExerciseApp.swift
-//  Chapter2-Exercise
+//  ThinkingInSwiftUIApp.swift
+//  ThinkingInSwiftUI
 //
-//  Created by jeffy on 2022/5/2.
+//  Created by jeffy on 2022/5/3.
 //
 
 import SwiftUI
 
 @main
-struct Chapter2_ExerciseApp: App {
+struct ThinkingInSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

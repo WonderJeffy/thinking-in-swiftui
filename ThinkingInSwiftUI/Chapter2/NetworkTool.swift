@@ -1,20 +1,11 @@
 //
-//  PhotoInfo.swift
-//  Chapter2-Exercise
+//  NetworkTool.swift
+//
 //
 //  Created by jeffy on 2022/5/2.
 //
 
 import SwiftUI
-
-/// 遵守 Codable 协议, 属性名与 json 中的 key 需要对应
-struct PhotoInfo: Codable, Identifiable {
-    var id: String
-    var author: String
-    var width, height: Double
-    var url, download_url: URL
-}
-
 
 /// 用于请求失败时 .failure 参数需要一个遵守 Error 协议对象
 struct LoadingError: Error {}
