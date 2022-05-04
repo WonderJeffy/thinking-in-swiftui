@@ -17,6 +17,7 @@
 		9E88B50128213A7500F5FE5D /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B4FF28213A7400F5FE5D /* NetworkTool.swift */; };
 		9E88B50228213A7500F5FE5D /* Chapter2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B50028213A7400F5FE5D /* Chapter2View.swift */; };
 		9E88B50528213F3500F5FE5D /* NormalTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B50428213F3500F5FE5D /* NormalTestView.swift */; };
+		9E88B50828217C7300F5FE5D /* Chapter3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B50728217C7300F5FE5D /* Chapter3View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		9E88B4FF28213A7400F5FE5D /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		9E88B50028213A7400F5FE5D /* Chapter2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2View.swift; sourceTree = "<group>"; };
 		9E88B50428213F3500F5FE5D /* NormalTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTestView.swift; sourceTree = "<group>"; };
+		9E88B50728217C7300F5FE5D /* Chapter3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				9E88B50428213F3500F5FE5D /* NormalTestView.swift */,
 				9E88B50328213A7B00F5FE5D /* Chapter2 */,
+				9E88B50628217C5500F5FE5D /* Chapter3 */,
 				9E88B4CF2821377500F5FE5D /* ThinkingInSwiftUIApp.swift */,
 				9E88B4D12821377500F5FE5D /* ContentView.swift */,
 				9E88B4D32821377800F5FE5D /* Assets.xcassets */,
@@ -142,6 +145,14 @@
 				9E88B4FF28213A7400F5FE5D /* NetworkTool.swift */,
 			);
 			path = Chapter2;
+			sourceTree = "<group>";
+		};
+		9E88B50628217C5500F5FE5D /* Chapter3 */ = {
+			isa = PBXGroup;
+			children = (
+				9E88B50728217C7300F5FE5D /* Chapter3View.swift */,
+			);
+			path = Chapter3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E88B50828217C7300F5FE5D /* Chapter3View.swift in Sources */,
 				9E88B4D22821377500F5FE5D /* ContentView.swift in Sources */,
 				9E88B50528213F3500F5FE5D /* NormalTestView.swift in Sources */,
 				9E88B50228213A7500F5FE5D /* Chapter2View.swift in Sources */,
@@ -450,6 +462,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffy.thingking-in-swiftui.ThinkingInSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -479,6 +495,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffy.thingking-in-swiftui.ThinkingInSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

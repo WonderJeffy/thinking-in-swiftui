@@ -34,7 +34,8 @@ struct Chapter2View: View {
                         .onAppear() { self.netTool.load() }
                 }
             }
-            .navigationBarHidden(true)
+//            .navigationBarHidden(true)
+            .navigationTitle("View 更新-练习")
             .navigationBarTitleDisplayMode(.inline)
         }
         
