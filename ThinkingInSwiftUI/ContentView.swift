@@ -26,6 +26,9 @@ struct ContentView: View {
                     Section("Chapter3") {
                         NavigationLink("Exercise", destination: Chapter3View())
                     }
+                    Section("Chapter4") {
+                        NavigationLink("Exercise", destination: Chapter4View())
+                    }
                 }
                 
             }

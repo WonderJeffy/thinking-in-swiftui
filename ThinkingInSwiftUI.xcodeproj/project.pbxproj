@@ -18,6 +18,7 @@
 		9E88B50228213A7500F5FE5D /* Chapter2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B50028213A7400F5FE5D /* Chapter2View.swift */; };
 		9E88B50528213F3500F5FE5D /* NormalTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B50428213F3500F5FE5D /* NormalTestView.swift */; };
 		9E88B50828217C7300F5FE5D /* Chapter3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B50728217C7300F5FE5D /* Chapter3View.swift */; };
+		9E88B50B28228F1400F5FE5D /* Chapter4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88B50A28228F1400F5FE5D /* Chapter4View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9E88B50028213A7400F5FE5D /* Chapter2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2View.swift; sourceTree = "<group>"; };
 		9E88B50428213F3500F5FE5D /* NormalTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTestView.swift; sourceTree = "<group>"; };
 		9E88B50728217C7300F5FE5D /* Chapter3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3View.swift; sourceTree = "<group>"; };
+		9E88B50A28228F1400F5FE5D /* Chapter4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +104,12 @@
 		9E88B4CE2821377500F5FE5D /* ThinkingInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9E88B4D12821377500F5FE5D /* ContentView.swift */,
+				9E88B4CF2821377500F5FE5D /* ThinkingInSwiftUIApp.swift */,
 				9E88B50428213F3500F5FE5D /* NormalTestView.swift */,
 				9E88B50328213A7B00F5FE5D /* Chapter2 */,
 				9E88B50628217C5500F5FE5D /* Chapter3 */,
-				9E88B4CF2821377500F5FE5D /* ThinkingInSwiftUIApp.swift */,
-				9E88B4D12821377500F5FE5D /* ContentView.swift */,
+				9E88B50928228EED00F5FE5D /* Chapter4 */,
 				9E88B4D32821377800F5FE5D /* Assets.xcassets */,
 				9E88B4D52821377800F5FE5D /* Preview Content */,
 			);
@@ -153,6 +156,14 @@
 				9E88B50728217C7300F5FE5D /* Chapter3View.swift */,
 			);
 			path = Chapter3;
+			sourceTree = "<group>";
+		};
+		9E88B50928228EED00F5FE5D /* Chapter4 */ = {
+			isa = PBXGroup;
+			children = (
+				9E88B50A28228F1400F5FE5D /* Chapter4View.swift */,
+			);
+			path = Chapter4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				9E88B50528213F3500F5FE5D /* NormalTestView.swift in Sources */,
 				9E88B50228213A7500F5FE5D /* Chapter2View.swift in Sources */,
 				9E88B50128213A7500F5FE5D /* NetworkTool.swift in Sources */,
+				9E88B50B28228F1400F5FE5D /* Chapter4View.swift in Sources */,
 				9E88B4D02821377500F5FE5D /* ThinkingInSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
