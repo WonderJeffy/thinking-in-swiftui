@@ -29,7 +29,7 @@ struct Collapsible<Element, Content: View>: View {
                     content(data[index])
                         .frame(width: showExpanded ? nil : collapseWidth, height: nil)
                 }
-            }
+            }.animation(.default, value: expanded)
             .padding(88)
             Text(expanded ? "collapse" : " expand ")
                 .frame(width: 88, height: 44, alignment: .center)
@@ -37,9 +37,9 @@ struct Collapsible<Element, Content: View>: View {
                 .background(expanded ? .blue : .orange)
                 .cornerRadius(22)
                 .onTapGesture {
-                    withAnimation {
+//                    withAnimation {
                         expanded.toggle()
-                    }
+//                    }
                 }
         }
     }

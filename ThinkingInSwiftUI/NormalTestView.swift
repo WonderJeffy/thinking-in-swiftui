@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct NormalTestView: View {
+    @State var selected = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button(action: { self.selected.toggle() }) {
+                RoundedRectangle(cornerRadius: 10)
+                .fill(.green)
+                .frame(width: 50, height: 50) 
+                .offset(x: -10, y: -10)
+                .rotationEffect(Angle.degrees(selected ? 360 : 0))
+            }
+            .animation(.linear(duration: 0.5).repeatForever(autoreverses: false), value: selected)
+        }
     }
 }
 
