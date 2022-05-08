@@ -23,11 +23,11 @@ struct Collapsible<Element, Content: View>: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(alignment: .top, spacing: nil) {
                 ForEach(data.indices, id: \.self){ index in
                     let showExpanded = (expanded || index == data.endIndex-1)
                     content(data[index])
-                        .frame(width: showExpanded ? nil : collapseWidth, height: nil, alignment: Alignment(horizontal: .leading, vertical: .center))
+                        .frame(width: showExpanded ? nil : collapseWidth, height: nil)
                 }
             }
             .padding(88)
@@ -71,7 +71,7 @@ struct Chapter4View: View {
             Collapsible(data: [1,2,3,4,5,6]) { element in
                 Rectangle()
                     .fill(Color(hue: Double(element)/6.0, saturation: 1, brightness: 1))
-                    .frame(width: 44, height: 44, alignment: .center)
+                    .frame(width: 44+Double(element), height: 44+Double(element), alignment: .center)
             }
             .padding()
             List {
